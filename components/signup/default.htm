@@ -3,11 +3,8 @@
 </div>
 	<form
 		data-request="{{ __SELF__ }}::onSignup"
-	    data-request-update="'{{ __SELF__ }}::result': '#{{ __SELF__.id }}container'"
-		class="clearfix" id="homeForm">
+	    data-request-update="'{{ __SELF__ }}::result': '#{{ __SELF__.id }}container'">
 	  <div class="form-group">
-	    <h3>{% content 'home/contact-form-title.htm' %}</h3>
-	    {% content 'home/contact-form-intro.htm' %}
 	    <label for="inlineName" class="sr-only">Name</label>
 	    <input type="text" class="form-control" id="inlineName" placeholder="Name" name="name" required>
 	  </div>
@@ -15,5 +12,5 @@
 	    <label for="inlineEmail" class="sr-only">Email address</label>
 	    <input type="email" class="form-control" id="inlineEmail" placeholder="Email address" name="email" required>
 	  </div>
-	  <button type="submit" class="btn btn-inline">{% content 'home/contact-form-button.htm' %}</button>
+	  <button type="submit" class="btn btn-inline">Subscribe</button>
 	</form>
