@@ -4,6 +4,14 @@ Thanks to Alexey Bobkov and Samuel Georges who wrote the MailChimp plugin. All I
 
 This plugin implements the Campaign Monitor subscription form functionality for the [OctoberCMS](http://octobercms.com).
 
+## Dependencies
+
+This plugin requires the [OctoberCMS Framework Extras](https://octobercms.com/docs/cms/ajax) be included within your page or layout.
+
+Add the following markup to your layout or page after the `{scripts}` declaration.
+
+    {% framework extras %}
+
 ## Configuring
 
 If you're installing this plugin manually, simply copy the contents of this directory to:
@@ -17,7 +25,7 @@ In order to use the plugin you need to get the API key from your [Campaign Monit
 
 ## Creating the Signup form
 
-You can put the Campaign Monitor signup form on any front-end page. Add the Campaign Monitor Signup Form component to a page or layout. Click the added component and paste your Campaign Monitor list identifier in the **MailChimp List ID** field. Close the Inspector and save the page. 
+You can put the Campaign Monitor signup form on any front-end page. Add the Campaign Monitor Signup Form component to a page or layout. Click the added component and paste your Campaign Monitor list identifier in the **Campaign Monitor List ID** field. Close the Inspector and save the page. 
 
 The simplest way to add the signup form is to use the component's default partial and the `{% component %}` tag. Add it to a page or layout where you want to display the form:
 
