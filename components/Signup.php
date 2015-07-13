@@ -51,7 +51,7 @@ class Signup extends ComponentBase
         /*
          * Sign up to CampaignMonitor via the API
          */
-        require_once(PATH_BASE . '/plugins/ctmh/campaignmonitor/vendor/campaignmonitor/csrest_subscribers.php');
+        require_once(plugins_path() . '/ctmh/campaignmonitor/vendor/campaignmonitor/csrest_subscribers.php');
         
         $auth = array('api_key' => $settings->api_key);
 

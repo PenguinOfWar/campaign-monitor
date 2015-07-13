@@ -46,6 +46,15 @@ The example uses the standard partial mailSignup::result for displaying the subs
 
 That's it!
 
+##Gotchas
+The plugin does not work from within a partial, it must be included in a layout. 
+
+However you can work around this by adding the component to your parent layout, but not inserting the code into the page.
+
+This will allow you to the in include the component again within your partial, and it will then work just fine.
+
+**Please note that the latest version of this plugin has been updated to work with the October Release Candidate only. I cannot guarantee this will be backwards compatible with older versions.**
+
 ##PS
 
-I'm using this in production, and haven't encountered any issues. If you have any problems, feel free to contact me (especially if you have to fix anything yourself).
+This plugin uses [semantic versioning](http://semver.org/).
